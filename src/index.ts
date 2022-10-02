@@ -69,7 +69,10 @@ function tableOrg(students: String[], assignments: String[]): void {
 // Input - File Reading and converting them into arrays.
 const testCase = '3'
 
-const studentListFile = readFileSync(`./testCases/students${testCase}.txt`, 'utf-8')
+const studentListFile = readFileSync(
+  `./testCases/students${testCase}.txt`,
+  'utf-8'
+)
 const studentList = studentListFile.split(/\r?\n/)
 studentList.pop()
 
