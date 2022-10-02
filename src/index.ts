@@ -15,7 +15,7 @@ import { writeFileSync, readFileSync } from 'fs'
  * @param {number} std standard deviation
  * @returns {number} returns GaussianNumber
  */
-function generateGaussian (mean: number, std: number): number {
+function generateGaussian(mean: number, std: number): number {
   // https://discourse.psychopy.org/t/javascript-gaussian-function/17724/2
   const _2PI = Math.PI * 2
   const u1 = Math.random()
@@ -37,7 +37,7 @@ function generateGaussian (mean: number, std: number): number {
  * @param {Array<string>} students The list of students
  * @param {Array<string>} assignments The list of assignments
  */
-function tableOrg (students: String[], assignments: String[]): void {
+function tableOrg(students: String[], assignments: String[]): void {
   // Gets the number of assignments
   const assLen = assignments.length
 
